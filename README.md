@@ -15,6 +15,17 @@ Una landing sencilla que muestra mi perfil, habilidades y links de contacto.
 Un prototipo de tienda online con carrito y filtrado de productos.  
 💻 Tecnologías: HTML5, CSS3, JavaScript
 
+### Music Web
+Creado para reproducir musica, ver noticias y escuchar podcasts.
+Ademas podes comprar tu propias licencias para crear musica.
+💻 Tecnologías: HTML5, CSS3, JavaScript, Bootstrap
+
+### Primer proyecto web
+La primer pagina creada utilizando estas tecnologias
+💻 Tecnologías: HTML5, CSS3, JavaScript
+
+## Proximamente incluire mas🚀 
+
 ---
 
 ## 🛠️ Tecnologías y herramientas
