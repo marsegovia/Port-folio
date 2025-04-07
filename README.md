@@ -39,5 +39,6 @@ La primer pagina creada utilizando estas tecnologias
 ## 📫 Contacto
 
 - LinkedIn: [linkedin.com/in/martin-segovia-445665199](https://linkedin.com/in/martin-segovia-445665199)
+- Visita mi portafolio: https://marsegovia.github.io/Port-folio/
 
 Gracias por pasar 👀 ¡Estoy en constante aprendizaje y crecimiento!
