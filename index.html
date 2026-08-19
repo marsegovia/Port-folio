@@ -1,76 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Martin Segovia | Portfolio</title>
 </head>
+
 <body>
+    <!-- PRESENTACIÓN -->
     <section class="presentation">
         <h1>Martin Segovia</h1>
-        <h3>Desarrollador Front End + Back End</h3>
-
+        <h3>Desarrollador de Software</h3>
         <div class="buttons">
-            <a href="https://github.com/marsegovia"><button> <img id="ghlogo" src="./github.png" alt="">GitHub</button>
-            <a href="https://www.linkedin.com/in/martin-segovia-445665199/"><button> <img id="ghlogo" src="./linkedin.png" alt="">LinkedIn</button></a></a>
-            <a href="./Curriculum vitae (1) (2).pdf"><button> <img id="ghlogo" src="./descargar.png" alt="">Descargar CV</button></a>
-        </div>
+            <a href="https://github.com/marsegovia" target="_blank">
+                <button> <img class="ghlogo" src="./github.png" alt=""> GitHub </button> </a>
 
-        <div class="logos">
-            <img src="./HTML5_logo_and_wordmark.svg.png" alt="" height="35em" width="35em">
-            <img src="./css3-logo-png_seeklogo-186678-removebg-preview.png" alt="" height="35em" width="35em">
-            <img src="./JavaScript-Logo.png" alt="" height="35em" width="32em">
-            <img src="./free-node-js-logo-icon-svg-download-png-3030179-removebg-preview.png" alt="" height="35em" width="35em">
+            <a href="https://www.linkedin.com/in/martin-segovia-445665199/" target="_blank">
+                <button> <img class="ghlogo" src="./linkedin.png" alt=""> LinkedIn </button> </a>
+
+            <a href="./Curriculum vitae (1) (2).pdf" target="_blank">
+                <button> <img class="ghlogo" src="./descargar.png" alt=""> Descargar CV </button> </a>
         </div>
     </section>
 
-    <section class="projects">
-        <h1 style="font-size: 40px;">Mis Proyectos</h1>
-                <div class="project1">
-                    <img id="image3" src="./Captura de pantalla 2025-12-20 201120.png" alt="">
-                    <div class="text">
-                        <h2>Del Imaginario Discos</h2>
-                        <p>E-commerce orientado a la venta de CDs con panel de administración. <br>
-                            (Leer Documentacion en GitHub) 
-                        </p>
-                        <div class="buttons_projects">
-                           <a href="https://github.com/marsegovia/DelImaginarioDiscos"> <button> <img id="ghlogo" src="./github.png" alt="">GitHub</button></a>
-                        <a href="https://delimaginariodiscos.onrender.com/login"><button><img id="ghlogo" src="./sitio-web.png" alt="">Demo</button></a>
-                    </div>
-                </div>
-            </div>
 
+    <!-- SELECCIÓN DE ÁREAS -->
+    <section class="areas">
+        <h1>Proyectos</h1>
+        <p>Seleccioná un área para ver mis proyectos</p>
+        <div class="areas-container">
+            <button class="area-card" onclick="mostrarSeccion('front')">
+                <h2>Front-End</h2>
+                <p>Interfaces, diseño y experiencias web</p>
+            </button>
 
-            <div class="project2">
-                <img src="./Captura de pantalla 2025-04-02 181716.png " alt="">
-                <div class="text">
-                    <h2>Muziek</h2>
-                    <p>Pagina web de entretenimiento musical. <br>
-                        Tambien ofrece licencias para crear tu propia musica.
-                    </p>
-                    <div class="buttons_projects">
-                        <a href="https://github.com/marsegovia/Muziek-Music-Web-"><button> <img id="ghlogo" src="./github.png" alt="">GitHub</button></a>
-                    <a href="https://marsegovia.github.io/Muziek-Music-Web-/"><button> <img id="ghlogo" src="./sitio-web.png" alt="">Visitar</button></a>
-                </div>
-                </div>
-            </div>
+            <button class="area-card" onclick="mostrarSeccion('back')">
+                <h2>Back-End</h2>
+                <p>Servidores, APIs y bases de datos</p>
+            </button>
 
+            <button class="area-card" onclick="mostrarSeccion('mobile')">
+                <h2>Mobile</h2>
+                <p>Aplicaciones adaptadas a dispositivos móviles</p>
+            </button>
 
-            <div class="project2">
-                <img src="./Captura de pantalla 2025-04-02 183422.png" alt="">
-                <div class="text">
-                    <h2>Electromax</h2>
-                    <p>Mi primer proyecto en colaboracion. <br>
-                        Se utiliza un formulario paso a paso.
-                    </p>
-                    <div class="buttons_projects">
-                    <a href="https://github.com/marsegovia/Primera-Pagina-Web"><button> <img id="ghlogo" src="./github.png" alt="">GitHub</button></a>
-                    <a href="https://marsegovia.github.io/Primera-Pagina-Web/"><button> <img id="ghlogo" src="./sitio-web.png" alt="">Visitar</button></a>
-                </div>
-                </div>
-            </div>
+        </div>
+
     </section>
 
+
+    <!-- ==================== -->
+    <!-- PROYECTOS FRONT-END -->
+    <!-- ==================== -->
+
+    <section id="front" class="projects project-section">
+
+        <button class="back-button" onclick="volverAreas()">
+            ← Volver
+        </button>
+
+        <h1>Proyectos Front-End</h1>
+        <div class="project2">
+            <img src="./Captura de pantalla 2025-04-02 181716.png" alt="Muziek">
+            <div class="text">
+                <h2>Muziek</h2>
+                <p>
+                    Página web de entretenimiento musical.
+                    <br>
+                    También ofrece licencias para crear tu propia música.
+                </p>
+
+                <div class="buttons_projects">
+                    <a href="https://github.com/marsegovia/Muziek-Music-Web-" target="_blank">
+                        <button>
+                            <img class="ghlogo" src="./github.png" alt="">
+                            GitHub
+                        </button>
+                    </a>
+
+                    <a href="https://marsegovia.github.io/Muziek-Music-Web-/" target="_blank">
+                        <button>
+                            <img class="ghlogo" src="./sitio-web.png" alt="">
+                            Visitar
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project2">
+
+            <img src="./Captura de pantalla 2025-04-02 183422.png" alt="Electromax">
+
+            <div class="text">
+
+                <h2>Electromax</h2>
+
+                <p>
+                    Mi primer proyecto en colaboración.
+                    <br>
+                    Se utiliza un formulario paso a paso.
+                </p>
+
+                <div class="buttons_projects">
+
+                    <a href="https://github.com/marsegovia/Primera-Pagina-Web" target="_blank">
+                        <button>
+                            <img class="ghlogo" src="./github.png" alt="">
+                            GitHub
+                        </button>
+                    </a>
+
+                    <a href="https://marsegovia.github.io/Primera-Pagina-Web/" target="_blank">
+                        <button>
+                            <img class="ghlogo" src="./sitio-web.png" alt="">
+                            Visitar
+                        </button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- PROYECTOS BACK-END -->
+    <!-- ==================== -->
+
+    <section id="back" class="projects project-section">
+
+        <button class="back-button" onclick="volverAreas()">
+            ← Volver
+        </button>
+
+        <h1>Proyectos Back-End</h1>
+
+        <div class="project1">
+
+            <img
+                id="image3"
+                src="./Captura de pantalla 2025-12-20 201120.png"
+                alt="Del Imaginario Discos"
+            >
+
+            <div class="text">
+
+                <h2>Del Imaginario Discos</h2>
+
+                <p>
+                    E-commerce orientado a la venta de CDs
+                    con panel de administración.
+                    <br>
+                    Leer documentación en GitHub.
+                </p>
+
+                <div class="buttons_projects">
+
+                    <a href="https://github.com/marsegovia/DelImaginarioDiscos" target="_blank">
+                        <button>
+                            <img class="ghlogo" src="./github.png" alt="">
+                            GitHub
+                        </button>
+                    </a>
+
+                    <a href="https://delimaginariodiscos.onrender.com/login" target="_blank">
+                        <button>
+                            <img class="ghlogo" src="./sitio-web.png" alt="">
+                            Demo
+                        </button>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- PROYECTOS MOBILE -->
+    <!-- ==================== -->
+
+    <section id="mobile" class="projects project-section">
+        <button class="back-button" onclick="volverAreas()"> ← Volver </button>
+
+        <h1>Proyectos Mobile</h1>
+        <div class="project3">
+            <img id="image3" src="./pesito.png" alt="Dashboard Financiero" >
+
+            <div class="text">
+                <h2>Dashboard Financiero: Pesito</h2>
+                <p>
+                    Aplicación web optimizada para dispositivos móviles
+                    para el control de gastos personales.
+                </p>
+
+                <div class="buttons_projects">
+                    <a href="https://github.com/marsegovia/Dashboard" target="_blank">
+                        <button>
+                            <img class="ghlogo" src="./github.png" alt=""> GitHub </button>
+                    </a>
+
+                    <a href="https://dashboard-y5yi.onrender.com" target="_blank">
+                        <button>
+                            <img class="ghlogo" src="./sitio-web.png" alt=""> Demo </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        function mostrarSeccion(seccion) {
+            // Ocultar selección de áreas
+            document.querySelector(".areas").style.display = "none";
+
+            // Ocultar todas las secciones
+            document.querySelectorAll(".project-section").forEach(section => {
+                section.style.display = "none";
+            });
+
+            // Mostrar la sección seleccionada
+            document.getElementById(seccion).style.display = "block";
+
+            // Subir al comienzo
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+
+        function volverAreas() {
+            // Ocultar proyectos
+            document.querySelectorAll(".project-section").forEach(section => {
+                section.style.display = "none";
+            });
+
+            // Mostrar áreas
+            document.querySelector(".areas").style.display = "block";
+
+            // Subir al comienzo
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+    </script>
 </body>
 </html>
